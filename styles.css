@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f3b4 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+}
+
+.fortune-box {
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    padding: 10px 20px; 
+    font-size: 1em; 
+    cursor: pointer;
+    background-color: #9ef8a1; 
+    color: rgb(29, 12, 12);
+    border: 2px solid #4CAF50; 
+    border-radius: 5px; 
+    transition: none; 
+}
+
+.links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.links h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links li {
+    margin: 10px 0;
+}
+
+.links a {
+    color: #1E90FF;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+/* stopwatch styles */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.stopwatch {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#timeDisplay {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* todo styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 1.2em;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+button.delete {
+    color: red;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button.complete {
+    color: green;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.back-to-home {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #080808; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-align: center;
+}
+

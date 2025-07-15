@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Generator</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <p id="refreshMessage" class="hidden">Refresh the page to generate a new fortune</p>
+
+    <!-- Fortune Box -->
+    <div class="fortune-box" id="fortuneBox">
+        <p id="fortuneMessage">Loading your fortune...</p>
+    </div>
+
+
+    <div class="controls">
+        <button onclick="changeFontColor()">Change Font Color</button>
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
+        <button onclick="changeBorderColor()">Change Border Color</button>
+        <button onclick="changeFontSize()">Change Font Size</button>
+    </div>
+
+    <div class="links">
+        <h2>More Fun Activities:</h2>
+        <ul>
+            <li><a href="stopwatch.html">Go to Stopwatch</a></li>
+            <li><a href="todo.html">Go to To-Do List</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
