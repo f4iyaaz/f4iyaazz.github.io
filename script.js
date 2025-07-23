@@ -20,35 +20,44 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function changeRandomStyle() {
-        const colors = ['#FF6347', '#3CB371', '#1E90FF', '#FFD700', '#8A2BE2'];
-        const bgColors = ['#FFFAF0', '#ADD8E6', '#F0E68C', '#98FB98', '#D8BFD8'];
-        const borderColors = ['#FF6347', '#3CB371', '#1E90FF', '#FFD700', '#8A2BE2'];
-        const fontSizes = ['16px', '18px', '20px', '22px', '24px'];
-        const fontFamilies = ['Arial', 'Verdana', 'Georgia', 'Times New Roman', 'Courier New'];
+    function changeStyle(styleSet) {
+        const fortuneMessage = document.getElementById("fortuneMessage");
+        const fortuneBox = document.getElementById("fortuneBox");
 
-        const randomAction = Math.floor(Math.random() * 4);
-
-        if (randomAction === 0) {
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            document.getElementById("fortuneMessage").style.color = randomColor;
-        } else if (randomAction === 1) {
-            const randomBgColor = bgColors[Math.floor(Math.random() * bgColors.length)];
-            document.getElementById("fortuneBox").style.backgroundColor = randomBgColor;
-        } else if (randomAction === 2) {
-            const randomBorderColor = borderColors[Math.floor(Math.random() * borderColors.length)];
-            document.getElementById("fortuneBox").style.borderColor = randomBorderColor;
-        } else {
-            const randomFontSize = fontSizes[Math.floor(Math.random() * fontSizes.length)];
-            const randomFontFamily = fontFamilies[Math.floor(Math.random() * fontFamilies.length)];
-            document.getElementById("fortuneMessage").style.fontSize = randomFontSize;
-            document.getElementById("fortuneMessage").style.fontFamily = randomFontFamily;
+        if (styleSet === 'style1') {
+            fortuneMessage.style.color = '#FF6347';
+            fortuneBox.style.backgroundColor = '#FFFAF0';
+            fortuneBox.style.borderColor = '#FF6347';
+            fortuneMessage.style.fontSize = '20px';
+            fortuneMessage.style.fontFamily = 'Arial';
+        } else if (styleSet === 'style2') {
+            fortuneMessage.style.color = '#3CB371';
+            fortuneBox.style.backgroundColor = '#ADD8E6';
+            fortuneBox.style.borderColor = '#3CB371';
+            fortuneMessage.style.fontSize = '22px';
+            fortuneMessage.style.fontFamily = 'Verdana';
+        } else if (styleSet === 'style3') {
+            fortuneMessage.style.color = '#1E90FF';
+            fortuneBox.style.backgroundColor = '#F0E68C';
+            fortuneBox.style.borderColor = '#1E90FF';
+            fortuneMessage.style.fontSize = '24px';
+            fortuneMessage.style.fontFamily = 'Georgia';
+        } else if (styleSet === 'style4') {
+            fortuneMessage.style.color = '#FFD700';
+            fortuneBox.style.backgroundColor = '#98FB98';
+            fortuneBox.style.borderColor = '#FFD700';
+            fortuneMessage.style.fontSize = '18px';
+            fortuneMessage.style.fontFamily = 'Times New Roman';
         }
     }
 
     randomFortune();
 
-    document.getElementById("changeStylesButton").addEventListener("click", changeRandomStyle);
+    // Add event listeners for each button with different style sets
+    document.getElementById("changeStyleButton1").addEventListener("click", () => changeStyle('style1'));
+    document.getElementById("changeStyleButton2").addEventListener("click", () => changeStyle('style2'));
+    document.getElementById("changeStyleButton3").addEventListener("click", () => changeStyle('style3'));
+    document.getElementById("changeStyleButton4").addEventListener("click", () => changeStyle('style4'));
 });
 
 
