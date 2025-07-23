@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const fortuneBox = document.getElementById("fortuneBox");
 
         if (styleSet === 'style1') {
-            fortuneMessage.style.color = '#FF6347';
-            fortuneBox.style.backgroundColor = '#FFFAF0';
-            fortuneBox.style.borderColor = '#FF6347';
+            fortuneMessage.style.color = 'blue';
+            fortuneBox.style.backgroundColor = 'red';
+            fortuneBox.style.borderColor = 'green';
             fortuneMessage.style.fontSize = '20px';
             fortuneMessage.style.fontFamily = 'Arial';
         } else if (styleSet === 'style2') {
