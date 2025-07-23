@@ -52,8 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
 // stopwatch script
 
 let timer;
