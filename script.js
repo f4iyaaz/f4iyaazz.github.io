@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Good things are coming your way.",
         "The future looks bright for you.",
         "A new opportunity will present itself.",
-        "You will meet someone interesting soon.",
+        "You will meet someone interesting soon.", 
         "Patience is key to your success.",
         "An exciting adventure is in your future.",
         "Expect a pleasant surprise today.",
