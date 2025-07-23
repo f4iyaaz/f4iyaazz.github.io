@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
             fortuneMessage.style.color = 'blue';
             fortuneBox.style.backgroundColor = 'red';
             fortuneBox.style.borderColor = 'green';
-            fortuneMessage.style.fontSize = '20px';
-            fortuneMessage.style.fontFamily = 'Arial';
+            fortuneMessage.style.fontSize = '36px';
+            fortuneMessage.style.fontFamily = 'Courier New';
         } else if (styleSet === 'style2') {
             fortuneMessage.style.color = '#3CB371';
             fortuneBox.style.backgroundColor = '#ADD8E6';
