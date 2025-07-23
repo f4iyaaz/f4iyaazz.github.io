@@ -20,48 +20,37 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // function to change font color
-    function changeFontColor() {
+    function changeRandomStyle() {
         const colors = ['#FF6347', '#3CB371', '#1E90FF', '#FFD700', '#8A2BE2'];
-        const randomColor = colors[Math.floor(Math.random() * colors.length)];
-        document.getElementById("fortuneMessage").style.color = randomColor;
-    }
-
-    // function to change background color of the fortune box
-    function changeBackgroundColor() {
         const bgColors = ['#FFFAF0', '#ADD8E6', '#F0E68C', '#98FB98', '#D8BFD8'];
-        const randomColor = bgColors[Math.floor(Math.random() * bgColors.length)];
-        document.getElementById("fortuneBox").style.backgroundColor = randomColor;
-    }
-
-    // function to change border color of the fortune box
-    function changeBorderColor() {
         const borderColors = ['#FF6347', '#3CB371', '#1E90FF', '#FFD700', '#8A2BE2'];
-        const randomColor = borderColors[Math.floor(Math.random() * borderColors.length)];
-        document.getElementById("fortuneBox").style.borderColor = randomColor;
-    }
-
-    // function to change font size and font family
-    function changeFontSize() {
         const fontSizes = ['16px', '18px', '20px', '22px', '24px'];
         const fontFamilies = ['Arial', 'Verdana', 'Georgia', 'Times New Roman', 'Courier New'];
 
-        const randomFontSize = fontSizes[Math.floor(Math.random() * fontSizes.length)];
-        const randomFontFamily = fontFamilies[Math.floor(Math.random() * fontFamilies.length)];
+        const randomAction = Math.floor(Math.random() * 4);
 
-        document.getElementById("fortuneMessage").style.fontSize = randomFontSize;
-        document.getElementById("fortuneMessage").style.fontFamily = randomFontFamily;
+        if (randomAction === 0) {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.getElementById("fortuneMessage").style.color = randomColor;
+        } else if (randomAction === 1) {
+            const randomBgColor = bgColors[Math.floor(Math.random() * bgColors.length)];
+            document.getElementById("fortuneBox").style.backgroundColor = randomBgColor;
+        } else if (randomAction === 2) {
+            const randomBorderColor = borderColors[Math.floor(Math.random() * borderColors.length)];
+            document.getElementById("fortuneBox").style.borderColor = randomBorderColor;
+        } else {
+            const randomFontSize = fontSizes[Math.floor(Math.random() * fontSizes.length)];
+            const randomFontFamily = fontFamilies[Math.floor(Math.random() * fontFamilies.length)];
+            document.getElementById("fortuneMessage").style.fontSize = randomFontSize;
+            document.getElementById("fortuneMessage").style.fontFamily = randomFontFamily;
+        }
     }
 
-    // call randomFortune on page load
     randomFortune();
 
-    // event listeners
-    document.querySelector("button:nth-child(1)").addEventListener("click", changeFontColor);
-    document.querySelector("button:nth-child(2)").addEventListener("click", changeBackgroundColor);
-    document.querySelector("button:nth-child(3)").addEventListener("click", changeBorderColor);
-    document.querySelector("button:nth-child(4)").addEventListener("click", changeFontSize);
+    document.getElementById("changeStylesButton").addEventListener("click", changeRandomStyle);
 });
+
 
 
 
